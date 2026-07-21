@@ -1,0 +1,30 @@
+# Cat Feeding & Care Tracker
+
+cats = ["Freya", "Neptun"]
+fed_today = {}
+
+for cat in cats:
+    fed_answer = input(f"Did you feed {cat} today? (yes/no): ")
+    fed_today[cat] = fed_answer.lower() == "yes"
+
+# Water and litter are shared, so just ask once
+water_answer = input("Was the water changed today? (yes/no): ")
+water_changed = water_answer.lower() == "yes"
+
+litter_answer = input("Was the litter cleaned today? (yes/no): ")
+litter_cleaned = litter_answer.lower() == "yes"
+
+print("\n--- Feeding & Care Summary ---")
+for cat in cats:
+    fed_status = "fed ✅" if fed_today[cat] else "NOT fed ❌"
+    print(f"{cat}: {fed_status}")
+
+water_status = "changed ✅" if water_changed else "NOT changed ❌"
+litter_status = "cleaned ✅" if litter_cleaned else "NOT cleaned ❌"
+print(f"Water: {water_status}")
+print(f"Litter: {litter_status}")
+
+if all(fed_today.values()) and water_changed and litter_cleaned:
+    print("\nGreat job, everything's covered today!")
+else:
+    print("\nSomething still needs doing today!")
