@@ -27,3 +27,4 @@ Q4 is consistently the strongest period - November and December show a repeating
 ## Tools used
 
 - Excel (pivot tables, pivot charts, KPI cards)
+- [Superstore sales dataset](https://www.kaggle.com/datasets/vivek468/superstore-dataset-final)
