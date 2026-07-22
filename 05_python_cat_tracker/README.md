@@ -45,7 +45,7 @@ Python is something I'm teaching myself independently, and this project is a sma
 ## Running it
 
 ```bash
-python cat_tracker.py
+python cat-care-tracker
 ```
 
 ## Where I'd take it next
